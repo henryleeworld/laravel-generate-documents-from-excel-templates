@@ -8,17 +8,17 @@
         "php": "^8.1",
         "anourvalar/office": "^1.5",
         "guzzlehttp/guzzle": "^7.5",
-        "laravel/framework": "^9.48",
+        "laravel/framework": "^9.51",
         "laravel/sanctum": "^2.15.1",
         "laravel/tinker": "^2.8",
         "phpoffice/phpspreadsheet": "^1.26"
     },
     "require-dev": {
         "fakerphp/faker": "^1.19.0",
-        "laravel/sail": "^1.18.1",
+        "laravel/sail": "^1.20.1",
         "mockery/mockery": "^1.5.1",
         "nunomaduro/collision": "^6.4",
-        "phpunit/phpunit": "^9.5.28",
+        "phpunit/phpunit": "^9.6.3",
         "spatie/laravel-ignition": "^1.6"
     },
     "autoload": {
