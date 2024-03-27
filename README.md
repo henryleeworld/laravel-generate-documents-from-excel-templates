@@ -1,4 +1,4 @@
-# Laravel 9 從 Excel 範本產生文件
+# Laravel 10 從 Excel 範本產生文件
 
 引入 anourvalar 的 office 套件來擴增從 Excel 範本產生文件，好可以使用範本來建立更多文件，而不是從頭開始。
 

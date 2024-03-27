@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use AnourValar\Office\Format;
-use AnourValar\Office\TemplateService;
+use AnourValar\Office\SheetsService;
 use DateTime;
 
 class DocumentController extends Controller
@@ -36,6 +36,6 @@ class DocumentController extends Controller
         ];
 
         // Save as XLSX (Excel)
-        (new TemplateService())->generate(storage_path('data/templates/template1.xlsx'), $data)->saveAs('generated_document.xlsx', Format::Xlsx);
+        (new SheetsService())->generate(storage_path('data/templates/template1.xlsx'), $data)->saveAs('generated_document.xlsx', Format::Xlsx);
     }
 }
