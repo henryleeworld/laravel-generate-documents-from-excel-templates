@@ -1,8 +1,9 @@
-# Laravel 10 從 Excel 範本產生文件
+# Laravel 11 從 Excel 範本產生文件
 
 引入 anourvalar 的 office 套件來擴增從 Excel 範本產生文件，好可以使用範本來建立更多文件，而不是從頭開始。
 
 ## 使用方式
+- 打開 php.ini 檔案，啟用 PHP 擴充模組 zip，並重啟服務器。
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
 ```sh
 $ git clone
@@ -22,5 +23,5 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/CH42q3a.png)
+![](https://i.imgur.com/VAP09JY.png)
 > 幫助工作上節約大量的時間，提高工作效率

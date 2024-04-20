@@ -12,7 +12,7 @@ class DocumentController extends Controller
     {
         $data = [
             // scalar
-            'vat' => 'No',
+            'vat' => __('No'),
             'total' => [
                 'price' => 2004.14,
                 'qty' => 3,
@@ -21,13 +21,13 @@ class DocumentController extends Controller
             // one-dimensional table
             'products' => [
                 [
-                    'name' => '商品 #1',
+                    'name' => __('Product') . ' #1',
                     'price' => 989,
                     'qty' => 1,
                     'date' => new DateTime('2022-05-01'),
                 ],
                 [
-                    'name' => '商品 #2',
+                    'name' => __('Product') . ' #2',
                     'price' => 1015.14,
                     'qty' => 2,
                     'date' => new DateTime('2022-05-02'),
@@ -37,5 +37,6 @@ class DocumentController extends Controller
 
         // Save as XLSX (Excel)
         (new SheetsService())->generate(storage_path('data/templates/template1.xlsx'), $data)->saveAs('generated_document.xlsx', Format::Xlsx);
+        echo __('Generated successfully.') . PHP_EOL;
     }
 }
