@@ -1,4 +1,4 @@
-# Laravel 11 從 Excel 範本產生文件
+# Laravel 12 從 Excel 範本產生文件
 
 引入 anourvalar 的 office 套件來擴增從 Excel 範本產生文件，好可以使用範本來建立更多文件，而不是從頭開始。
 
@@ -17,11 +17,15 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+```sh
+$ php artisan migrate
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/document/generate` 來產生文件。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/VAP09JY.png)
+![](https://i.imgur.com/nuap7zO.png)
 > 幫助工作上節約大量的時間，提高工作效率

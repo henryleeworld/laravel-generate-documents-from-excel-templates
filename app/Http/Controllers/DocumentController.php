@@ -11,14 +11,12 @@ class DocumentController extends Controller
     public function generate() 
     {
         $data = [
-            // scalar
             'vat' => __('No'),
             'total' => [
                 'price' => 2004.14,
                 'qty' => 3,
             ],
 
-            // one-dimensional table
             'products' => [
                 [
                     'name' => __('Product') . ' #1',
@@ -35,7 +33,6 @@ class DocumentController extends Controller
             ],
         ];
 
-        // Save as XLSX (Excel)
         (new SheetsService())->generate(storage_path('data/templates/template1.xlsx'), $data)->saveAs('generated_document.xlsx', Format::Xlsx);
         echo __('Generated successfully.') . PHP_EOL;
     }
